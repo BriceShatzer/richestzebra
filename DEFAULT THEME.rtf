@@ -1,0 +1,983 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.21.2509;}\viewkind4\uc1\pard\f0\fs20 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\par
+<!--\par
+    \par
+        .                                  .o8       oooo               \par
+      .o8                                 "888       `888               \par
+    .o888oo oooo  oooo  ooo. .oo.  .oo.    888oooo.   888  oooo d8b     \par
+      888   `888  `888  `888P"Y88bP"Y88b   d88' `88b  888  `888""8P     \par
+      888    888   888   888   888   888   888   888  888   888         \par
+      888 .  888   888   888   888   888   888   888  888   888     .o. \par
+      "888"  `V88V"V8P' o888o o888o o888o  `Y8bod8P' o888o d888b    Y8P\par
+\par
+-->\par
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\par
+<head>\par
+    <!-- DEFAULT VARIABLES -->\par
+    <meta name="color:Background" content="#3b627e" />\par
+    <meta name="font:Title" content="Arial" />\par
+    <meta name="font:Body" content="Arial" />\par
+    <meta name="font:Accent" content="Lucida Sans" />\par
+    <meta name="if:Show People I Follow" content="1" />\par
+    <meta name="if:Show Tags" content="1" />\par
+    <meta name="if:Show Album Art on Audio Posts" content="1" />\par
+    <meta name="text:Disqus Shortname" content="" />\par
+    <meta name="image:Header" content="" />\par
+    <meta name="image:Background" content="" />\par
+    \par
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\par
+    <title>\{Title\}\{block:SearchPage\}, Search results for: \{SearchQuery\}\{/block:SearchPage\}\{block:PostSummary\}, \{PostSummary\}\{/block:PostSummary\}</title>\par
+    \{block:Description\}<meta name="description" content="\{MetaDescription\}" />\{/block:Description\}\par
+    <link rel="shortcut icon" href="\{Favicon\}" />\par
+    <link rel="apple-touch-icon" href="\{PortraitURL-128\}"/>\par
+    <link rel="alternate" type="application/rss+xml" href="\{RSS\}" />\par
+    <style type="text/css">\par
+        body \{\par
+            background: \{color:Background\} url('\{image:Background\}') top left fixed repeat;\par
+            margin: 0;\par
+            padding: 0;\par
+            font-family: \{font:Body\};\par
+        \}\par
+        \par
+        .clear \{\par
+            clear: both;\par
+            height: 0px;\par
+            overflow: hidden;\par
+        \}\par
+        \par
+        a img \{\par
+            border: none;\par
+        \}\par
+        \par
+        #wrapper \{\par
+            width: 845px;\par
+            margin: 0 auto;\par
+        \}\par
+        \par
+            #wrapper #title \{\par
+                margin: 30px 0;\par
+                color: #fff;\par
+                font-size: 50px;\par
+                font-weight: bold;\par
+                font-family: \{font:Title\};\par
+                text-shadow: #2f2f2f 1px 3px 5px;\par
+                letter-spacing: -1px;\par
+            \}\par
+            \par
+                #wrapper #title a \{\par
+                    color: #fff;\par
+                    text-decoration: none;\par
+                \}\par
+            \par
+            #wrapper #content \{\par
+                width: 520px;\par
+                float: left;\par
+            \}\par
+            \par
+                #wrapper #content .post \{\par
+                    font-family: \{font:Body\};\par
+                    background: #fff;\par
+                    padding: 10px;\par
+                    position: relative;\par
+                \}\par
+                    \par
+                    #wrapper #content .post .media \{\par
+                        text-align: center;\par
+                        margin-bottom: 10px;\par
+                    \}\par
+                    \par
+                    #wrapper #content .post .quotebg \{\par
+                        font-family: georgia, serif;\par
+                        font-size: 150px;\par
+                        color: \{color:Background\};\par
+                        opacity: 0.2;\par
+                        filter: alpha(opacity=20);\par
+                        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";\par
+                        position: absolute;\par
+                        top: 70px;\par
+                        left: 10px;\par
+                    \}\par
+                    \par
+                    #wrapper #content .post .quote \{\par
+                        color: \{color:Background\};\par
+                        font-weight: bold;\par
+                        padding: 20px 20px 5px 20px;\par
+                    \}\par
+                    \par
+                    #wrapper #content .post .quote.short \{\par
+                        font-size: 33px;\par
+                        line-height: 35px;\par
+                    \}\par
+                    \par
+                    #wrapper #content .post .quote.medium \{\par
+                        font-size: 25px;\par
+                        line-height: 28px;\par
+                    \}\par
+                    \par
+                    #wrapper #content .post .quote.long \{\par
+                        font-size: 18px;\par
+                        line-height: 22px;\par
+                    \}\par
+                                        \par
+                        #wrapper #content .post .quote_source *:first-child \{\par
+                            margin-top: 0px;\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .quote_source *:last-child \{\par
+                            margin-bottom: 0px;\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .quote *:first-child \{\par
+                            margin-top: 0px;\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .quote *:last-child \{\par
+                            margin-bottom: 0px;\par
+                        \}\par
+                        \par
+                    #wrapper #content .post .copy \{\par
+                        color: #6e7173;\par
+                        padding: 10px;\par
+                        font-size: 13px;\par
+                        line-height: 15px;\par
+                    \}\par
+                        \par
+                        #wrapper #content .post .copy a \{\par
+                            color: #6e7173;\par
+                            text-decoration: underline;\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .copy p \{\par
+                            margin: 10px 0 0 0;\par
+                            padding: 0;\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .copy pre \{\par
+                            margin: 10px 0px 10px 0px;\par
+                            padding: 10px;\par
+                            background-color: #e6e6e6;\par
+                            font: normal 11px Courier, monospace;\par
+                            overflow: auto;\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .copy > p:first-child \{\par
+                            margin-top: 0;\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .copy img \{\par
+                            max-width: 100%;\par
+                        \}\par
+                    \par
+                    #wrapper #content .post .audio \{\par
+                        background: #eaeaea;\par
+                        float: left;\par
+                        padding: 7px;\par
+                        margin-bottom: 10px;\par
+                        -moz-border-radius: 4px;\par
+                        -webkit-border-radius: 4px;\par
+                        border-radius: 4px;\par
+                    \}\par
+                                                        \par
+                        #wrapper #content .post .audio .player \{\par
+                            float: left;\par
+                        \}\par
+                        \par
+                            #wrapper #content .post .audio .player .audio_player embed \{\par
+                                border: 1px solid #c8c8c8;\par
+                            \}\par
+                        \par
+                        #wrapper #content .post .audio .meta \{\par
+                            padding: 8px 13px;\par
+                            height: 13px;\par
+                            float: left;\par
+                            color: #666;\par
+                            font-family: \{font:Accent\};\par
+                            font-size: 11px;\par
+                        \}\par
+                        \par
+                            #wrapper #content .post .audio .meta a \{\par
+                                color: #666;\par
+                                text-decoration: none;\par
+                            \}\par
+                    \par
+                    #wrapper #content .post .album_art \{\par
+                        text-align: center;\par
+                    \}\par
+                    \par
+                    #wrapper #content .post .question \{\par
+                        color: #494949;\par
+                        font-size: 16px;\par
+                        font-weight: bold;\par
+                        background: #f1f1f1;\par
+                        -moz-border-radius: 8px;\par
+                        -webkit-border-radius: 8px;\par
+                        border-radius: 8px;\par
+                        margin: 0 0 15px 0;\par
+                        padding: 15px 20px;\par
+                        position: relative;\par
+                    \}\par
+                    \par
+                        #wrapper #content .post .question .nipple \{\par
+                            width: 13px;\par
+                            height: 7px;\par
+                            background: #f1f1f1 url('http://static.tumblr.com/thpaaos/wqzkvsd69/mask_ask.png');\par
+                            position: absolute;\par
+                            bottom: -7px;\par
+                            left: 30px;\par
+                        \}\par
+                        \par
+                    #wrapper #content .post .asker_container \{\par
+                        margin: 0 0 20px 24px;\par
+                    \}\par
+                    \par
+                        #wrapper #content .post .asker_container img \{\par
+                            margin: 0 12px -7px 0;\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .asker_container a.asker \{\par
+                            color: \{color:Body\};\par
+                        \}\par
+                    \par
+                    #wrapper #content .post .title \{\par
+                        color: #494949;\par
+                        font-size: 16px;\par
+                        font-weight: bold;\par
+                        padding: 10px 10px 0 10px;\par
+                    \}\par
+                    \par
+                    #wrapper #content .post img \{\par
+                      max-width: 500px;\par
+                    \}\par
+                                        \par
+                    #wrapper #content .post .chat \{\par
+                        background-color: #fff;\par
+                        border-left: 5px solid #dedddd;\par
+                        margin: 10px 10px 0 10px;\par
+                        font-size: 14px;\par
+                    \}\par
+                                        \par
+                        #wrapper #content .post .chat .lines \{\par
+                            margin-left: 1px;\par
+                        \}\par
+                        \par
+                            #wrapper #content .post .chat .lines .line \{\par
+                                background-color: #eaeaea;\par
+                                color: #494949;\par
+                                margin-bottom: 1px;\par
+                                padding: 3px 5px;\par
+                            \}\par
+                            \par
+                            #wrapper #content .post .chat .lines .line.even \{\par
+                                background-color: #dedddd;\par
+                            \}\par
+                        \par
+                        #wrapper #content .post .link \{\par
+                            margin: 4px 0 2px 0;\par
+                            font-size: 16px;\par
+                            line-height: 25px;\par
+                        \}\par
+                            \par
+                            #wrapper #content .post .link a \{\par
+                                background-color: \{color:Background\};\par
+                                color: #fff;\par
+                                padding: 5px 7px;\par
+                                -moz-border-radius: 4px;\par
+                                -webkit-border-radius: 4px;\par
+                                border-radius: 4px;\par
+                            \}\par
+                            \par
+                            #wrapper #content .post .link a:hover \{\par
+                                opacity: 0.9;\par
+                                filter: alpha(opacity=90);\par
+                                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";\par
+                            \}\par
+                    \par
+                    #wrapper #content .post .footer \{\par
+                        background: #eaeaea;\par
+                        -moz-border-radius: 4px;\par
+                        -webkit-border-radius: 4px;\par
+                        border-radius: 4px;\par
+                        font-family: \{font:Accent\};\par
+                        font-size: 11px;\par
+                        color: #666;\par
+                        padding: 5px 10px;\par
+                        margin-top: 10px;\par
+                    \}\par
+                        \par
+                        #wrapper #content .post .footer:hover \{\par
+                            opacity: 0.9;\par
+                            filter: alpha(opacity=90);\par
+                            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .footer .date \{\par
+                            width: 67%;\par
+                            float: left;\par
+                            color: #666;\par
+                        \}\par
+                        \par
+                        #wrapper #content .post .footer .notes \{\par
+                            width: 33%;\par
+                            float: right;\par
+                            text-align: right;\par
+                            color: #666;\par
+                        \}\par
+                            \par
+                            #wrapper #content .post .footer .notes a \{\par
+                                color: #666;\par
+                            \}\par
+                            \par
+                            #wrapper #content .post .footer .tags a \{\par
+                                color: #4a4a51;\par
+                                text-decoration: underline;\par
+                            \}\par
+                            \par
+                                #wrapper #content .post .footer .tags .tag-commas:last-child \{\par
+                                    display: none;\par
+                                \}\par
+                        \par
+                        #wrapper #content .post a \{\par
+                            color: #6e7173;\par
+                            text-decoration: none;\par
+                        \}\par
+                        \par
+                            #wrapper #content .post .copy blockquote \{\par
+                                margin: 10px 0px 10px 10px;\par
+                                padding-left: 15px;\par
+                                border-left: solid 4px #dcdcdc;\par
+                            \}\par
+                            \par
+                                #wrapper #content .post .copy blockquote blockquote \{\par
+                                    border-left: solid 4px #cccccc;\par
+                                \}\par
+                                \par
+                                    #wrapper #content .post .copy blockquote blockquote blockquote \{\par
+                                        border-left: solid 4px #bcbcbc;\par
+                                    \}\par
+                                    \par
+                                        #wrapper #content .post .copy blockquote blockquote blockquote blockquote \{\par
+                                            border-left: solid 4px #acacac;\par
+                                        \}\par
+                                        \par
+                                            #wrapper #content .post .copy blockquote blockquote blockquote blockquote blockquote \{\par
+                                                border-left: solid 4px #9c9c9c;\par
+                                            \}\par
+                                            \par
+                                                #wrapper #content .post .copy blockquote blockquote blockquote blockquote blockquote blockquote \{\par
+                                                    border-left: solid 4px #8c8c8c;\par
+                                                \}\par
+                        \par
+                        #wrapper #content .bottom \{\par
+                            background: url('http://assets.tumblr.com/themes/redux/shadow-post.png') top center no-repeat transparent;\par
+                            width: 513px;\par
+                            height: 40px;\par
+                            margin: 0 auto;\par
+                        \}\par
+                        \par
+                        #wrapper #content #navigation \{\par
+                            text-align: right;\par
+                            padding-bottom: 35px;\par
+                        \}\par
+                        \par
+                            #wrapper #content #navigation a \{\par
+                                background-color: #fff;\par
+                                color: \{color:Background\};\par
+                                padding: 5px 10px;\par
+                                text-decoration: none;\par
+                                margin-left: 25px;\par
+                            \}\par
+                            \par
+                            #wrapper #content #navigation a:hover \{\par
+                                opacity: 0.9;\par
+                                filter: alpha(opacity=90);\par
+                                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";\par
+                            \}\par
+                            \par
+                            #wrapper #content .post .notecontainer \{\par
+                                background: #eaeaea;\par
+                                -moz-border-radius: 4px;\par
+                                -webkit-border-radius: 4px;\par
+                                border-radius: 4px;\par
+                                font-family: \{font:Accent\};\par
+                                font-size: 11px;\par
+                                color: #666;\par
+                                margin-top: 10px;\par
+                                margin-bottom: -10px;\par
+                            \}\par
+                            \par
+                                    #wrapper #content .post .notecontainer a \{\par
+                                        color: #666;\par
+                                        text-decoration: underline;\par
+                                    \}\par
+                                    \par
+                                    #wrapper #content .post .notecontainer ol.notes \{\par
+                                        padding: 0px 0 10px 0;\par
+                                        list-style-type: none;\par
+                                        font-size: 11px;\par
+                                    \}\par
+                                    \par
+                                        #wrapper #content .post .notecontainer ol.notes li.note \{\par
+                                            padding: 10px 10px 0 10px;\par
+                                        \}\par
+                                        \par
+                                            #wrapper #content .post .notecontainer ol.notes li.note img.avatar \{\par
+                                                vertical-align: -4px;\par
+                                                margin-right: 10px;\par
+                                                width: 16px;\par
+                                                height: 16px;\par
+                                            \}\par
+                                            \par
+                                            #wrapper #content .post .notecontainer ol.notes li.note span.action \{\par
+                                                font-weight: normal;\par
+                                            \}\par
+                                            \par
+                                            #wrapper #content .post .notecontainer ol.notes li.note .answer_content \{\par
+                                                font-weight: normal;\par
+                                            \}\par
+                                            \par
+                                            #wrapper #content .post .notecontainer ol.notes li.note blockquote \{\par
+                                                border-left: 2px solid #666;\par
+                                                padding: 4px 10px;\par
+                                                margin: 10px 0px 0px 25px;\par
+                                            \}\par
+                                            \par
+                                                #wrapper #content .post .notecontainer ol.notes li.note blockquote a \{\par
+                                                    text-decoration: none;\par
+                                                \}\par
+                \par
+                #wrapper #content #searchresults \{\par
+                    color: #fff;\par
+                    margin: 0 0 15px 0;\par
+                    text-shadow: #2f2f2f 1px 3px 5px;\par
+                    font-family: \{font:Body\};\par
+                    font-size: 20px;\par
+                \}\par
+            \par
+            #wrapper #sidebar \{\par
+                width: 250px;\par
+                float: right;\par
+                color: \{color:Background\};\par
+                font-family: \{font:Accent\}\par
+            \}\par
+            \par
+                #wrapper #sidebar a \{\par
+                    color: \{color:Background\};\par
+                \}\par
+                \par
+                #wrapper #sidebar #top \{\par
+                    background: #fff;\par
+                    padding: 0 20px;\par
+                    \par
+                    -webkit-border-top-left-radius: 10px;\par
+                    -webkit-border-top-right-radius: 10px;\par
+                    -moz-border-radius-topleft: 10px;\par
+                    -moz-border-radius-topright: 10px;\par
+                    border-top-left-radius: 10px;\par
+                    border-top-right-radius: 10px;\par
+                \}\par
+                \par
+                    #wrapper #sidebar #top #avatar \{\par
+                        width: 146px;\par
+                        height: 146px;\par
+                        padding: 8px 0 0 9px;\par
+                        background: url('http://assets.tumblr.com/themes/redux/avatar-bg.png') top left no-repeat transparent;\par
+                        position: relative;\par
+                        top: -24px;\par
+                        left: -5px;\par
+                    \}\par
+                    \par
+                    #wrapper #sidebar #top #pages \{\par
+                        margin-bottom: 15px;\par
+                        font-size: 12px;\par
+                    \}\par
+                    \par
+                        #wrapper #sidebar #top #pages.ask_and_submit \{\par
+                            display: none;\par
+                            \{block:AskEnabled\}display: block;\{/block:AskEnabled\}\par
+                            \{block:SubmissionsEnabled\}display: block;\{/block:SubmissionsEnabled\}\par
+                        \}\par
+                    \par
+                        #wrapper #sidebar #top #pages a.page \{\par
+                            display: block;\par
+                            float: left;\par
+                            background-color: \{color:Background\};\par
+                            color: #fff;\par
+                            padding: 4px 5px;\par
+                            margin: 0 5px 5px 0;\par
+                            -webkit-border-radius: 3px;\par
+                            -moz-border-radius: 3px;\par
+                            border-radius: 3px;\par
+                        \}\par
+                        \par
+                        #wrapper #sidebar #top #pages a.page:last-child \{\par
+                            margin-right: 0;\par
+                        \}\par
+                        \par
+                        #wrapper #sidebar #top #pages a.page:hover \{\par
+                            opacity: 0.9;\par
+                            filter: alpha(opacity=90);\par
+                            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";\par
+                        \}\par
+                        \par
+                    #wrapper #sidebar #top #description \{\par
+                        font-size: 11px;\par
+                        position: relative;\par
+                        top: -18px;\par
+                    \}\par
+                    \par
+                        #wrapper #sidebar #top #description a \{\par
+                            color: \{color:Background\};\par
+                            text-decoration: underline;\par
+                        \}\par
+                    \par
+                    #wrapper #sidebar #top #search \{\par
+                        background: #fff;\par
+                        border: 1px solid \{color:Background\};\par
+                        \par
+                        -moz-border-radius: 4px;\par
+                        -webkit-border-radius: 4px;\par
+                        border-radius: 4px;\par
+                    \}\par
+                    \par
+                    #wrapper #sidebar #top #search-scope \{\par
+                        padding-top: 5px;\par
+                        font-size: 11px;\par
+                        text-align: center;\par
+                    \}\par
+                    \par
+                        #wrapper #sidebar #top #search-scope input,\par
+                        #wrapper #sidebar #top #search-scope label \{\par
+                            cursor: pointer;\par
+                        \}\par
+                        \par
+                        #wrapper #sidebar #top #search form \{\par
+                            margin: 0;\par
+                        \}\par
+                            \par
+                            #wrapper #sidebar #top #search form .query \{\par
+                                padding: 5px;\par
+                                border: none;\par
+                                background: transparent;\par
+                                outline: none;\par
+                                width: 125px;\par
+                                float: left;\par
+                                color: \{color:Background\};\par
+                            \}\par
+                            \par
+                            #wrapper #sidebar #top #search form .submit \{\par
+                                background: \{color:Background\};\par
+                                color: #fff;\par
+                                border: none;\par
+                                padding: 5px 7px;\par
+                                margin: 3px 3px 2px 0;\par
+                                float: right;\par
+                                -moz-border-radius: 3px;\par
+                                -webkit-border-radius: 3px;\par
+                                border-radius: 3px;\par
+                                cursor: pointer;\par
+                            \}\par
+                            \par
+                            #wrapper #sidebar #top #search form .submit:hover \{\par
+                                opacity: 0.9;\par
+                                filter: alpha(opacity=90);\par
+                                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";\par
+                            \}\par
+                    \par
+                    #wrapper #sidebar #top .content \{\par
+                        margin-top: 2px;\par
+                        padding: 7px 10px;\par
+                        background: #eaeaea;\par
+                        color: #666;\par
+                        font-size: 11px;\par
+                        overflow: hidden;\par
+                    \}\par
+                    \par
+                        #wrapper #sidebar #top a \{\par
+                            text-decoration: none;\par
+                        \}\par
+                    \par
+                        #wrapper #sidebar #top #following-avatars.content \{\par
+                            padding: 4px;\par
+                        \}\par
+                    \par
+                                #wrapper #sidebar #top #following-avatars.content a img \{\par
+                                    margin: 5px;\par
+                                \}\par
+                                \par
+                        #wrapper #sidebar #top #buttons \{\par
+                            padding: 20px 0 0 0;\par
+                        \}\par
+                        \par
+                            #wrapper #sidebar #top #buttons .button \{\par
+                                width: 35%;\par
+                                height: 21px;\par
+                                float: left;\par
+                                background: left center no-repeat transparent;\par
+                                padding: 2px 0 0 30px;\par
+                                font-size: 14px;\par
+                            \}\par
+                            \par
+                                #wrapper #sidebar #top #buttons a \{\par
+                                    color: \{color:Background\};\par
+                                    text-decoration: none;\par
+                                \}\par
+                            \par
+                                #wrapper #sidebar #top #buttons div \{\par
+                                    padding-bottom: 10px;\par
+                                \}\par
+                            \par
+                            #wrapper #sidebar #top #buttons .button#button-rss \{\par
+                                background-image: url('http://assets.tumblr.com/themes/redux/button-rss.png?2');\par
+                            \}\par
+                            \par
+                            #wrapper #sidebar #top #buttons .button#button-random \{\par
+                                background-image: url('http://assets.tumblr.com/themes/redux/button-random.png?2');\par
+                            \}\par
+                            \par
+                            #wrapper #sidebar #top #buttons .button#button-archive \{\par
+                                background-image: url('http://assets.tumblr.com/themes/redux/button-archive.png?2');\par
+                            \}\par
+                            \par
+                            #wrapper #sidebar #top #buttons .button#button-mobile \{\par
+                                background-image: url('http://assets.tumblr.com/themes/redux/button-mobile.png?2');\par
+                            \}\par
+                \par
+                    #wrapper #sidebar #bottom \{\par
+                        background: url('http://assets.tumblr.com/themes/redux/sidebar-bottom.png') top center no-repeat transparent;\par
+                        width: 250px;\par
+                        height: 25px;\par
+                    \}\par
+                    \par
+                    #wrapper #sidebar #copyright \{\par
+                        text-align: center;\par
+                        color: #fff;\par
+                        font-size: 12px;\par
+                        margin-bottom: 10px;\par
+                    \}\par
+                    \par
+                        #wrapper #sidebar #copyright a \{\par
+                            color: #fff;\par
+                            margin-left: 15px;\par
+                        \}\par
+    \par
+    </style>\par
+    <!--[if lt IE 7.]>\par
+        <style type="text/css">\par
+            #wrapper #sidebar #bottom \{\par
+                background: transparent;\par
+            \}\par
+            \par
+            #wrapper #sidebar #top #avatar \{\par
+                background: none;\par
+            \}\par
+            \par
+            #wrapper #sidebar #top #avatar img \{\par
+                border: 5px solid #f1f1f1;\par
+            \}\par
+            \par
+            #wrapper #sidebar #top .heading#followontumblr \{\par
+                background-image: none;\par
+                text-indent: 0;\par
+            \}\par
+        \par
+            #wrapper #sidebar #top .heading#twitter \{\par
+                background-image: none;\par
+            \}\par
+        \par
+            #wrapper #sidebar #top .heading#following \{\par
+                background-image: none;\par
+            \}\par
+\par
+            #wrapper #content .post .audio .player \{\par
+                float: none;\par
+            \}\par
+            \par
+            #wrapper #content .post .audio .meta \{\par
+                display: none;\par
+                float: none;\par
+            \}\par
+        </style>\par
+    <![endif]-->\par
+    \par
+    <!--[if lt IE 8.]>\par
+        <style type="text/css">\par
+            #wrapper #content .bottom \{\par
+                background: transparent;\par
+            \}\par
+            \par
+            #wrapper #content .post .footer \{\par
+                background: transparent;\par
+                color: #000;\par
+            \}\par
+            \par
+            #wrapper #content .post .audio \{\par
+                float: none;\par
+                background: transparent;\par
+            \}\par
+            \par
+            #wrapper #content .post .notecontainer .notes \{\par
+                padding: 0;\par
+                margin: 0;\par
+            \}\par
+        </style>\par
+    <![endif]-->\par
+    <style type="text/css">\{CustomCSS\}</style>\par
+</head>\par
+<body>\par
+    <div id="wrapper">\par
+        <div id="title">\par
+            <a href="/">\par
+                \{block:IfHeaderImage\}<img src="\{image:Header\}" />\{/block:IfHeaderImage\}\par
+                \{block:IfNotHeaderImage\}\{Title\}\{/block:IfNotHeaderImage\}\par
+            </a>\par
+        </div>\par
+        \par
+        <div id="content">\par
+            \par
+            \{block:SearchPage\}\par
+                <div id="searchresults" class="searchresultcount">\{SearchResultCount\} results for <strong>"\{SearchQuery\}"</strong></div>\par
+            \{/block:SearchPage\}\par
+            \par
+            \{block:NoSearchResults\}\par
+                <style type="text/css">\par
+                    .searchresultcount \{\par
+                        display: none;\par
+                    \}\par
+                </style>\par
+                <div id="searchresults">No results for <strong>"\{SearchQuery\}"</strong></div>\par
+            \{/block:NoSearchResults\}\par
+            \par
+            \{block:Posts\}            \par
+                <div class="post">\par
+                    \par
+                    \{block:Photo\}\par
+                        <div class="media">\{LinkOpenTag\}<img src="\{PhotoURL-500\}" alt="\{PhotoAlt\}" />\{LinkCloseTag\}</div>\par
+                        \{block:Caption\}<div class="copy">\{Caption\}</div>\{/block:Caption\}\par
+                    \{/block:Photo\}\par
+                    \par
+                    \{block:Video\}\par
+                        <div class="media">\{Video-500\}</div>\par
+                        \{block:Caption\}<div class="copy">\{Caption\}</div>\{/block:Caption\}\par
+                    \{/block:Video\}\par
+                    \par
+                    \{block:Audio\}\par
+                        \{block:IfShowAlbumArtOnAudioPosts\}\par
+                            \{block:AlbumArt\}\par
+                                <div class="album_art">\par
+                                    <img src="\{AlbumArtURL\}" alt="\{block:Artist\}\{Artist\}\{/block:Artist\}\{block:TrackName\} - \{TrackName\}\{/block:TrackName\}" style="margin-bottom: 10px" />\par
+                                </div>\par
+                            \{/block:AlbumArt\}\par
+                        \{/block:IfShowAlbumArtOnAudioPosts\}\par
+                        \par
+                        <div class="audio">\par
+                            <div class="player">\{AudioPlayerWhite\}</div>\par
+                            <div class="meta">\{PlayCountWithLabel\}\{block:ExternalAudio\}<span class="download_external_audio"> &bull; <a href="\{ExternalAudioURL\}">download</a></span>\{/block:ExternalAudio\}</div>\par
+                            <div class="clear"></div>\par
+                        </div>\par
+                        <div class="clear"></div>\par
+                        \{block:Caption\}<div class="copy">\{Caption\}</div>\{/block:Caption\}\par
+                    \{/block:Audio\}\par
+                    \par
+                    \{block:Quote\}\par
+                        <div class="quote \{Length\}">\{Quote\}</div>\par
+                        <div class="copy">\par
+                            <div class="quotebg">\ldblquote </div>\par
+                            \{block:Source\}\par
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">\par
+                                    <tr>\par
+                                        <td valign="top" style="width: 20px">&mdash;</td>\par
+                                        <td valign="top" class="quote_source">\par
+                                            \{Source\}\par
+                                        </td>\par
+                                    </tr>\par
+                                </table>\par
+                            \{/block:Source\}\par
+                        </div>\par
+                    \{/block:Quote\}\par
+                        \par
+                    \{block:Text\}\par
+                        \{block:Title\}<div class="title">\{Title\}</div>\{/block:Title\}\par
+                        <div class="copy">\{Body\}</div>\par
+                    \{/block:Text\}\par
+                    \par
+                    \{block:Answer\}\par
+                        <div class="question">\par
+                            <div class="nipple"></div>\par
+                            \{Question\}\par
+                        </div>\par
+                        <div class="asker_container"><img src="\{AskerPortraitURL-24\}">\{Asker\}</div>\par
+                        <div class="copy">\{Answer\}</div>\par
+                    \{block:Answer\}\par
+                    \par
+                    \{block:Chat\}\par
+                        \{block:Title\}<div class="title">\{Title\}</div>\{/block:Title\}\par
+                        <div class="chat">\par
+                            <div class="lines">\par
+                                \{block:Lines\}\par
+                                    <div class="line \{Alt\}">\{block:Label\}<strong>\{Label\}</strong>\{/block:Label\} \{Line\}</div>\par
+                                \{/block:Lines\}\par
+                            </div>\par
+                        </div>\par
+                        <div class="clear"></div>\par
+                        <div style="height: 10px"></div>\par
+                    \{/block:Chat\}\par
+                    \par
+                    \{block:Link\}\par
+                        <div class="link"><a href="\{URL\}" \{Target\}>\{Name\} &raquo;</a></div>\par
+                        \{block:Description\}<div class="copy">\{Description\}</div>\{/block:Description\}\par
+                    \{/block:Link\}\par
+                    \par
+                    \{block:Date\}\par
+                        <a href="\{Permalink\}">\par
+                            <div class="footer">\par
+                                <div class="date">\par
+                                    \{block:Reblog\}Reblogged\{/block:Reblog\}\par
+                                    \{block:NotReblog\}Posted\{/block:NotReblog\}\par
+                                    \par
+                                    \{TimeAgo\}\par
+                                    \par
+                                    \{block:Reblog\}from \{ReblogParentName\} \{block:RebloggedFromReblog\}(originally from \{ReblogRootName\})\{/block:RebloggedFromReblog\}\{/block:Reblog\}\par
+                                    \{block:FromBookmarklet\}from bookmarklet\{/block:FromBookmarklet\}\par
+                                    \{block:FromMobile\}from mobile\{/block:FromMobile\}\par
+                                </div>\par
+                                <div class="notes">\{block:NoteCount\}\{NoteCountWithLabel\}\{/block:NoteCount\} \{block:IfDisqusShortname\}\{block:NoteCount\}&bull;\{/block:NoteCount\} <a href="\{Permalink\}#disqus_thread">view comments</a>\{/block:IfDisqusShortname\}</div>\par
+                                <div class="clear"></div>\par
+                            </div>\par
+                        </a>\par
+                    \{/block:Date\}\par
+                    \par
+                    \{block:IfShowTags\}\par
+                        \{block:HasTags\}<div class="footer"><div class="tags">Tagged: \{block:Tags\}<a href="\{TagURL\}">\{Tag\}</a><span class="tag-commas">, </span>\{/block:Tags\}.</div></div>\{/block:HasTags\}\par
+                    \{/block:IfShowTags\}\par
+                    \par
+                    \{block:PostNotes\}<div class="notecontainer">\{PostNotes\}</div>\{/block:PostNotes\}\par
+                    \par
+                    \{block:IfDisqusShortname\}\par
+                        \{block:Permalink\}\par
+                            <div class="notecontainer" style="margin: 20px 0 1px 0; padding: 1px 10px 10px 10px;">\par
+                                <div id="disqus_thread"></div>\par
+                                <script type="text/javascript" src="http://disqus.com/forums/\{text:Disqus Shortname\}/embed.js"></script>\par
+                                <noscript><a href="http://\{text:Disqus Shortname\}.disqus.com/?url=ref">View the discussion thread.</a></noscript>\par
+                            </div>\par
+                            <div style="text-align: right; margin-top: 5px">\par
+                                <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>\par
+                            </div>\par
+                        \{/block:Permalink\}\par
+                    \{/block:IfDisqusShortname\}\par
+                    \par
+                </div>\par
+                <div class="bottom"></div>\par
+            \{/block:Posts\}\par
+            \par
+            \{block:Pagination\}\par
+                <div id="navigation">\par
+                    \{block:PreviousPage\}<a href="\{PreviousPage\}">&larr; previous page</a>\{/block:PreviousPage\}\par
+                    \{block:NextPage\}<a href="\{NextPage\}">next page &rarr;</a>\{/block:NextPage\}\par
+                </div>\par
+            \{/block:Pagination\}\par
+            \par
+        </div>\par
+        \par
+        <div id="sidebar">\par
+            <div id="top">\par
+                <div id="avatar"><a href="/"><img src="\{PortraitURL-128\}" /></a></div>\par
+                <div id="description">\{Description\}</div>\par
+                \par
+                <div id="pages" class="ask_and_submit">\par
+                    \{block:AskEnabled\}<a href="/ask" class="page">\{AskLabel\}</a>\{/block:AskEnabled\}\par
+                    \{block:SubmissionsEnabled\}<a href="/submit" class="page">\{SubmitLabel\}</a>\{/block:SubmissionsEnabled\}\par
+                    <div class="clear"></div>\par
+                </div>\par
+                \par
+                \{block:HasPages\}\par
+                    <div id="pages">\par
+                        \{block:Pages\}<a href="\{URL\}" class="page">\{Label\}</a>\{/block:Pages\}\par
+                        <div class="clear"></div>\par
+                    </div>\par
+                \{/block:HasPages\}\par
+                \par
+                <div id="search">\par
+                    <form action="/search" method="get" id="search-form">\par
+                        <input type="hidden" name="t" value="\{Name\}" />\par
+                        <input type="hidden" name="scope" value="all_of_tumblr" />\par
+                        <input type="text" name="q" class="query" value="\{SearchQuery\}" />\par
+                        <input type="submit" value="Search" class="submit" />\par
+                        <div class="clear"></div>\par
+                    </form>\par
+                </div>\par
+                <div id="search-scope">\par
+                    <input type="radio" id="search-scope-me" name="scope" checked onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">My Blog</label>\par
+                    <input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://tumblr.com/search'">All of Tumblr</label>\par
+                </div>\par
+                \par
+                             \par
+                \{block:Twitter\}\par
+                <div id="twitterwrapper" style="display: none">\par
+                    <a href="http://twitter.com/\{TwitterUsername\}" style="text-decoration: none"><div class="heading" id="twitter">Latest Tweets</div></a>\par
+                    <div id="tweetcontainer"></div>\par
+                    <script type="text/javascript">\par
+                        function recent_tweets(data) \{\par
+                            document.getElementById("twitterwrapper").style.display = "block";\par
+                            for(i = 0; i < data.length; i++) \{\par
+                                document.getElementById("tweetcontainer").innerHTML = document.getElementById("tweetcontainer").innerHTML + '<a href="http://twitter.com/\{TwitterUsername\}/status/' + data[i].id + '"><div class="content">' + data[i].text + '</div></a>';\par
+                            \}\par
+                        \}\par
+                    </script>\par
+                </div>\par
+                \{/block:Twitter\}\par
+                \par
+                \{block:IfShowPeopleIFollow\}\par
+                    \{block:Following\}\par
+                        <div class="heading" id="following">Following</div>\par
+                        <div class="content" id="following-avatars">\par
+                            \{block:Followed\}<a href="\{FollowedURL\}"><img src="\{FollowedPortraitURL-40\}" /></a>\{/block:Followed\}\par
+                        </div>\par
+                    \{/block:Following\}\par
+                \{/block:IfShowPeopleIFollow\}\par
+                \par
+                <div id="buttons">\par
+                    <div class="row">\par
+                        <div class="button" id="button-rss"><a href="\{RSS\}">RSS Feed</a></div>\par
+                        <div class="button" id="button-random"><a href="/random">Random</a></div>\par
+                    </div>\par
+                    <div class="clear"></div>\par
+                    <div class="row">\par
+                        <div class="button" id="button-archive"><a href="/archive">Archive</a></div>\par
+                        <div class="button" id="button-mobile"><a href="/mobile">Mobile</a></div>\par
+                    </div>\par
+                    <div class="clear"></div>\par
+                </div>\par
+                \par
+            </div>\par
+            \par
+            <div id="bottom"></div>\par
+            <div id="copyright">&copy; \{CopyrightYears\} <a href="http://www.tumblr.com">Powered by Tumblr</a></div>\par
+        </div>\par
+        \par
+        <div class="clear"></div>\par
+    </div>\par
+    \par
+    \{block:Twitter\}\par
+        <script type="text/javascript" src="/tweets.js"></script>\par
+    \{/block:Twitter\}\par
+    \par
+    \{block:IfDisqusShortname\}\par
+        <script type="text/javascript">\par
+            //<![CDATA[\par
+            (function() \{\par
+                var links = document.getElementsByTagName('a');\par
+                var query = '?';\par
+                for(var i = 0; i < links.length; i++) \{\par
+                    if(links[i].href.indexOf('#disqus_thread') >= 0) \{\par
+                        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';\par
+                    \}\par
+                \}\par
+                document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/\{text:Disqus Shortname\}/get_num_replies.js' + query + '"></' + 'script>');\par
+            \})();\par
+            //]]>\par
+        </script>\par
+    \{/block:IfDisqusShortname\}\par
+</body>\par
+</html>\par
+}
+ 
